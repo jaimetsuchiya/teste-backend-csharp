@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A46FE75E-50FF-47E0-AB5F-D0BBCF01C01C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infrastructure.TorreHanoi.Ioc</RootNamespace>
+    <AssemblyName>Infrastructure.TorreHanoi.Ioc</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SimpleInjector, Version=3.3.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SimpleInjector.3.3.2\lib\net45\SimpleInjector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Injector.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\2.Application\Application.TorreHanoi\Application.TorreHanoi.csproj">
+      <Project>{88700238-5377-4a71-a707-6c802033f3bd}</Project>
+      <Name>Application.TorreHanoi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\3.Domain\Domain.TorreHanoi\Domain.TorreHanoi.csproj">
+      <Project>{3ca4575a-9887-4038-b92d-f1ba7556e77e}</Project>
+      <Name>Domain.TorreHanoi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.TorreHanoi.CacheManager\Infrastructure.TorreHanoi.CacheManager.csproj">
+      <Project>{f3537f21-a3d4-4642-a560-2ea23ef9dd33}</Project>
+      <Name>Infrastructure.TorreHanoi.CacheManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.TorreHanoi.ImagemHelper\Infrastructure.TorreHanoi.ImagemHelper.csproj">
+      <Project>{588319F2-CDD3-4037-B5CC-6852DA91B541}</Project>
+      <Name>Infrastructure.TorreHanoi.ImagemHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.TorreHanoi.Logger\Infrastructure.TorreHanoi.Logger.csproj">
+      <Project>{415d27dd-10d7-49f6-a109-3556a6e3c290}</Project>
+      <Name>Infrastructure.TorreHanoi.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.TorreHanoi.Queue\Infrastructure.TorreHanoi.Queue.csproj">
+      <Project>{cc2a84f3-6dd7-4cd9-a65e-6e7e0a4d258e}</Project>
+      <Name>Infrastructure.TorreHanoi.Queue</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.TorreHanoi.ServiceAgent\Infrastructure.TorreHanoi.ServiceAgent.csproj">
+      <Project>{18d52a96-f541-443e-8595-ed2db2dccdff}</Project>
+      <Name>Infrastructure.TorreHanoi.ServiceAgent</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

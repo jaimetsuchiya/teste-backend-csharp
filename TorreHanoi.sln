@@ -1,0 +1,98 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation", "1.Presentation", "{812061B1-EA11-43C3-A050-5140664FF946}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application", "2.Application", "{B627D009-6B7D-4E90-987E-4FF086202026}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Domain", "3.Domain", "{B7482188-C1B5-4E97-862F-2CB345986C50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Infrastructure", "4.Infrastructure", "{C686F904-FB17-4A9D-83CA-70788DC81D56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Tests", "5.Tests", "{705B1262-FB23-4136-B6B3-5B5CDAB60D78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation.TorreHanoi", "1.Presentation\Presentation.TorreHanoi\Presentation.TorreHanoi.csproj", "{899004CE-E39E-42D0-95AF-01022ED17936}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.TorreHanoi", "2.Application\Application.TorreHanoi\Application.TorreHanoi.csproj", "{88700238-5377-4A71-A707-6C802033F3BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.TorreHanoi", "3.Domain\Domain.TorreHanoi\Domain.TorreHanoi.csproj", "{3CA4575A-9887-4038-B92D-F1BA7556E77E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.TorreHanoi.Queue", "4.Infrastructure\Infrastructure.TorreHanoi.Queue\Infrastructure.TorreHanoi.Queue.csproj", "{CC2A84F3-6DD7-4CD9-A65E-6E7E0A4D258E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.TorreHanoi", "5.Tests\Tests.TorreHanoi\Tests.TorreHanoi.csproj", "{0A81C063-151B-4504-AED7-F477DC4B96A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.TorreHanoi.Ioc", "4.Infrastructure\Infrastructure.TorreHanoi.Ioc\Infrastructure.TorreHanoi.Ioc.csproj", "{A46FE75E-50FF-47E0-AB5F-D0BBCF01C01C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.TorreHanoi.ImagemHelper", "4.Infrastructure\Infrastructure.TorreHanoi.ImagemHelper\Infrastructure.TorreHanoi.ImagemHelper.csproj", "{588319F2-CDD3-4037-B5CC-6852DA91B541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.TorreHanoi.ServiceAgent", "4.Infrastructure\Infrastructure.TorreHanoi.ServiceAgent\Infrastructure.TorreHanoi.ServiceAgent.csproj", "{18D52A96-F541-443E-8595-ED2DB2DCCDFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.TorreHanoi.CacheManager", "4.Infrastructure\Infrastructure.TorreHanoi.CacheManager\Infrastructure.TorreHanoi.CacheManager.csproj", "{F3537F21-A3D4-4642-A560-2EA23EF9DD33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.TorreHanoi.Logger", "4.Infrastructure\Infrastructure.TorreHanoi.Logger\Infrastructure.TorreHanoi.Logger.csproj", "{415D27DD-10D7-49F6-A109-3556A6E3C290}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{899004CE-E39E-42D0-95AF-01022ED17936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{899004CE-E39E-42D0-95AF-01022ED17936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{899004CE-E39E-42D0-95AF-01022ED17936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{899004CE-E39E-42D0-95AF-01022ED17936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88700238-5377-4A71-A707-6C802033F3BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88700238-5377-4A71-A707-6C802033F3BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88700238-5377-4A71-A707-6C802033F3BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88700238-5377-4A71-A707-6C802033F3BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA4575A-9887-4038-B92D-F1BA7556E77E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA4575A-9887-4038-B92D-F1BA7556E77E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA4575A-9887-4038-B92D-F1BA7556E77E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA4575A-9887-4038-B92D-F1BA7556E77E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC2A84F3-6DD7-4CD9-A65E-6E7E0A4D258E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC2A84F3-6DD7-4CD9-A65E-6E7E0A4D258E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC2A84F3-6DD7-4CD9-A65E-6E7E0A4D258E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC2A84F3-6DD7-4CD9-A65E-6E7E0A4D258E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A81C063-151B-4504-AED7-F477DC4B96A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A81C063-151B-4504-AED7-F477DC4B96A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A81C063-151B-4504-AED7-F477DC4B96A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A81C063-151B-4504-AED7-F477DC4B96A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A46FE75E-50FF-47E0-AB5F-D0BBCF01C01C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46FE75E-50FF-47E0-AB5F-D0BBCF01C01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46FE75E-50FF-47E0-AB5F-D0BBCF01C01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46FE75E-50FF-47E0-AB5F-D0BBCF01C01C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{588319F2-CDD3-4037-B5CC-6852DA91B541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588319F2-CDD3-4037-B5CC-6852DA91B541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588319F2-CDD3-4037-B5CC-6852DA91B541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588319F2-CDD3-4037-B5CC-6852DA91B541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D52A96-F541-443E-8595-ED2DB2DCCDFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D52A96-F541-443E-8595-ED2DB2DCCDFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D52A96-F541-443E-8595-ED2DB2DCCDFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D52A96-F541-443E-8595-ED2DB2DCCDFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3537F21-A3D4-4642-A560-2EA23EF9DD33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3537F21-A3D4-4642-A560-2EA23EF9DD33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3537F21-A3D4-4642-A560-2EA23EF9DD33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3537F21-A3D4-4642-A560-2EA23EF9DD33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{415D27DD-10D7-49F6-A109-3556A6E3C290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{415D27DD-10D7-49F6-A109-3556A6E3C290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{415D27DD-10D7-49F6-A109-3556A6E3C290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{415D27DD-10D7-49F6-A109-3556A6E3C290}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{899004CE-E39E-42D0-95AF-01022ED17936} = {812061B1-EA11-43C3-A050-5140664FF946}
+		{88700238-5377-4A71-A707-6C802033F3BD} = {B627D009-6B7D-4E90-987E-4FF086202026}
+		{3CA4575A-9887-4038-B92D-F1BA7556E77E} = {B7482188-C1B5-4E97-862F-2CB345986C50}
+		{CC2A84F3-6DD7-4CD9-A65E-6E7E0A4D258E} = {C686F904-FB17-4A9D-83CA-70788DC81D56}
+		{0A81C063-151B-4504-AED7-F477DC4B96A7} = {705B1262-FB23-4136-B6B3-5B5CDAB60D78}
+		{A46FE75E-50FF-47E0-AB5F-D0BBCF01C01C} = {C686F904-FB17-4A9D-83CA-70788DC81D56}
+		{588319F2-CDD3-4037-B5CC-6852DA91B541} = {C686F904-FB17-4A9D-83CA-70788DC81D56}
+		{18D52A96-F541-443E-8595-ED2DB2DCCDFF} = {C686F904-FB17-4A9D-83CA-70788DC81D56}
+		{F3537F21-A3D4-4642-A560-2EA23EF9DD33} = {C686F904-FB17-4A9D-83CA-70788DC81D56}
+		{415D27DD-10D7-49F6-A109-3556A6E3C290} = {C686F904-FB17-4A9D-83CA-70788DC81D56}
+	EndGlobalSection
+EndGlobal
