@@ -39,10 +39,18 @@ namespace Domain.TorreHanoi
             _log.Logar($"TorreHanoi id {Id} -> Iniciando Processamento", TipoLog.Fluxo);
             try
             {
-                Resolver(Discos.Count, Origem, Intermediario, Destino);
+                if (Discos.Count <= 0)
+                {
+                    Status = TipoStatus.FinalizadoErro;
+                    _log.Logar($"TorreHanoi id {Id} -> Processo finalizado com erro, número de discos inválido:{Discos.Count}", TipoLog.Fluxo);
+                }
+                else
+                {
+                    Resolver(Discos.Count, Origem, Intermediario, Destino);
 
-                Status = TipoStatus.FinalizadoSucesso;
-                _log.Logar($"TorreHanoi id {Id} -> Processo finalizado com sucesso", TipoLog.Fluxo);
+                    Status = TipoStatus.FinalizadoSucesso;
+                    _log.Logar($"TorreHanoi id {Id} -> Processo finalizado com sucesso", TipoLog.Fluxo);
+                }
             }
             catch(Exception ex)
             {
@@ -57,14 +65,18 @@ namespace Domain.TorreHanoi
 
         private void Resolver(int numeroDiscosRestante, Pino origem, Pino intermediario, Pino destino)
         {
-            if (numeroDiscosRestante <= 1)
-            {
-                return;
-            }
+            _log.Logar($"Resolver Parametros = numeroDiscosRestantes:{numeroDiscosRestante}, origem:{origem.Tipo.ToString()}, intermediario: {intermediario.Tipo.ToString()}, destino: {destino.Tipo.ToString()}", TipoLog.Fluxo);
 
-            Resolver(numeroDiscosRestante - 1, origem, destino, intermediario);
-            MoverDisco(origem, destino);
-            Resolver(numeroDiscosRestante - 1, intermediario, origem, destino);
+            if (numeroDiscosRestante == 1)
+            {
+                MoverDisco(origem, destino);
+            }
+            else
+            {
+                Resolver(numeroDiscosRestante - 1, origem, destino, intermediario);
+                MoverDisco(origem, destino);
+                Resolver(numeroDiscosRestante - 1, intermediario, origem, destino);
+            }
         }
 
         private void MoverDisco(Pino pinoInicio, Pino pinoFim)
